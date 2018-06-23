@@ -1,0 +1,23 @@
+{
+  "name": "sggs_server",
+  "version": "1.0.0",
+  "description": "Server for Sri Guru Granth Sahib client apps",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sarabdeep singh",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "knex": "^0.14.6",
+    "prettyjson": "^1.2.1",
+    "sqlite3": "^4.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.2.1"
+  }
+}
