@@ -4,6 +4,8 @@
   "description": "Server for Sri Guru Granth Sahib client apps",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
+    "dev" : "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "sarabdeep singh",
