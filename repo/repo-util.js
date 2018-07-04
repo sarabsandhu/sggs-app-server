@@ -12,5 +12,6 @@ module.exports = {
             asciiKeys.push(str[i].charCodeAt(0));
 
         return asciiKeys.join(','); 
-    }
+    },
+    
 }

@@ -6,4 +6,5 @@ module.exports =
     connection: { filename: "./sggs.db"  },
     debug: true
   }
+  
 };

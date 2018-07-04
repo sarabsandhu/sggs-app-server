@@ -11,6 +11,10 @@ module.exports = {
 
     searchByFirstInitialLetterForGurmukhiResults : (query) => {
         return gurbaniRepo.searchByFirstInitialLetterForGurmukhiResults(query);
+    },
+    
+    searchByWordMatch : (query) => {
+        return gurbaniRepo.searchByWordMatch(query);
     }
     
  }
