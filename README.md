@@ -2,7 +2,16 @@
 sggs application server
 
 ## Installation
-
+    1. clone the git repo https://github.com/sarabsandhu/sggs-app-server.git using command
+        git clone https://github.com/sarabsandhu/sggs-app-server.git
+    2. change into directory sggs-app-server using command
+        cd sggs-app-server
+    3. run the below command to install all required dependencies
+        npm install
+    4. run below command to start the app.
+        npm start 
+    5. app will start running on port 8000
+    
 npm install
 
 ## Run sggs app server
@@ -21,4 +30,4 @@ http://localhost:8000/api/sggs/search?language=english&type=firstInitialLetter&k
 
 http://localhost:8000/api/sggs/search?language=gurmukhi&type=firstInitialLetter&keyword=gmk&skip=0&rowCount=50
 
-
+git clone https://github.com/sarabsandhu/sggs-app-server.git
