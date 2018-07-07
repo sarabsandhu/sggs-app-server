@@ -1,9 +1,15 @@
+'use strict';
+
 var express = require('express'),
     bodyParser = require('body-parser'),
+    config = require('./config'),
     searchRouter = require('./Routes/searchRoutes')();
 
 var app = express();
-var port = process.env.PORT || 8000;
+var configObj = config[process.env.NODE_ENV || 'development'];
+var port = configObj.port;
+
+console.log('starting application at port ',port)
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());

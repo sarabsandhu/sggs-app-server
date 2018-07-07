@@ -92,9 +92,9 @@ module.exports = {
             
                 if(query.exact){
                     whereRawStringArray.push(" ( gurmukhi like ? or gurmukhi like ? or gurmukhi like ? ) ")
-                    parameterArray.push(element.trim()+' %');
-                    parameterArray.push('% '+ element.trim()+' %');
-                    parameterArray.push('% ' + element.trim());
+                    parameterArray.push(element.trim()+' %'); //word is start of line
+                    parameterArray.push('% '+ element.trim()+' %'); //word is middle of line
+                    parameterArray.push('% ' + element.trim()); //word is at end of line
                 }else{
                     whereRawStringArray.push(' gurmukhi like ? ')
                     parameterArray.push('%'+element.trim()+'%')
@@ -124,13 +124,13 @@ module.exports = {
                     
                     whereRawStringArray.push(" ( english like ? or english like ? or english like ? or english like ? or english like ? or english like ? ) ")
                     
-                    parameterArray.push(element.trim()+' %');
-                    parameterArray.push('% '+ element.trim()+' %');
-                    parameterArray.push('% ' + element.trim());
-                    parameterArray.push('% ' + element.trim()+',%');
-                    parameterArray.push('% ' + element.trim()+'.%');
-                    parameterArray.push('% ' + element.trim()+':%');
-                    
+                    parameterArray.push(element.trim()+' %');   //word is at the start of shabad
+                    parameterArray.push('% '+ element.trim()+' %'); //middle
+                    parameterArray.push('% ' + element.trim()); //end
+                    parameterArray.push('% ' + element.trim()+',%'); //comma
+                    parameterArray.push('% ' + element.trim()+'.%'); //period
+                    parameterArray.push('% ' + element.trim()+':%'); //colon at the end
+
                 }else{
 
                     whereRawStringArray.push(' english like ? ')

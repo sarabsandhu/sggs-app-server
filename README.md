@@ -8,9 +8,12 @@ sggs application server
         cd sggs-app-server
     3. run the below command to install all required dependencies
         npm install
-    4. run below command to start the app.
-        npm start 
-    5. app will start running on port 8000
+    4. Start the application
+        1. run below command to start the app for development mode (port = 8000)
+            NODE_ENV=development npm start 
+        2. run below command to start the app for production mode (port = 8080)
+            NODE_ENV=production npm start 
+    5. app will start running on port 8000 for development and 8080 for production.
     
 npm install
 

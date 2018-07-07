@@ -4,7 +4,7 @@ module.exports =
   {
     client: "sqlite3",
     connection: { filename: "./sggs.db"  },
+    useNullAsDefault: true,
     debug: true
   }
-  
 };

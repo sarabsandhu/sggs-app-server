@@ -1,5 +1,5 @@
 var gulp = require('gulp'),
-    nodemon = require('gulp-nodemon')
+    nodemon = require('gulp-nodemon');
 
 gulp.task ('default',()=>{
     nodemon({
@@ -11,6 +11,6 @@ gulp.task ('default',()=>{
         ignore: ['./node_modules/**']
     })
     .on('restart', () => {
-        console.log('restarting')
+        console.log('restarting');
     });
 });
