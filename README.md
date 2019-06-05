@@ -6,6 +6,12 @@
     3. run the below command to install all required dependencies
         npm install
 
+#Setup in Visual Studio Code
+    1. Import the cloned directory into your Visual Studio Workspace along side React client app
+    2. Open a terminal window in Visual Studio Code
+    3. Navigate to cloned directory in Installation step 2.
+    4. Run the App using below Steps mentioned in Run Sggs app server
+
 ## Run sggs app server
 
     1. run below command to start the app for development mode (port = 8000)
