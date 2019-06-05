@@ -6,7 +6,7 @@
     3. run the below command to install all required dependencies
         npm install
 
-#Setup in Visual Studio Code
+##Setup in Visual Studio Code
     1. Import the cloned directory into your Visual Studio Workspace along side React client app
     2. Open a terminal window in Visual Studio Code
     3. Navigate to cloned directory in Installation step 2.
