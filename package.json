@@ -14,12 +14,12 @@
     "bluebird": "^3.5.1",
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "knex": "^0.14.6",
     "prettyjson": "^1.2.1",
-    "sqlite3": "^4.0.1"
+    "sqlite3": "^4.0.8"
   },
   "devDependencies": {
-    "gulp-nodemon": "^2.2.1"
+    "gulp-nodemon": "^2.4.2"
   }
 }
